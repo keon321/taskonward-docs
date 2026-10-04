@@ -6,11 +6,11 @@ Power 是 TaskOnward 的可选浏览器助手。
 
 ## 下载
 
-[下载 TaskOnward Power 0.7.13 ZIP](../downloads/taskonward-power-0.7.13.zip)
+[下载 TaskOnward Power 0.7.14 ZIP](../downloads/taskonward-power-0.7.14.zip)
 
 SHA-256：
 
-`547797479e700d26704e3bb28baa21b3548ded25defb978bce0b51c1f4289591`
+`50355415ad698fb1a0ee656e6d1561167e74f5590b33a013ecc03058957525a2`
 
 ## Chrome 安装
 
@@ -19,7 +19,7 @@ SHA-256：
 3. 打开开发者模式；
 4. 加载已解压的扩展程序；
 5. 选择解压后的文件夹；
-6. 刷新 ChatGPT。
+6. 刷新 ChatGPT。升级已有 Power 时也请刷新已打开的 ChatGPT 页面一次，避免旧扩展页面脚本继续停留在旧上下文。
 
 ## 使用
 
