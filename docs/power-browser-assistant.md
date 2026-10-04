@@ -6,11 +6,11 @@ Power 是 TaskOnward 的可选浏览器助手。
 
 ## 下载
 
-[下载 TaskOnward Power 0.7.12 ZIP](../downloads/taskonward-power-0.7.12.zip)
+[下载 TaskOnward Power 0.7.13 ZIP](../downloads/taskonward-power-0.7.13.zip)
 
 SHA-256：
 
-`363813b1cf59532172fd8f3a5daeb8e90680d9bbd507462423b21c4a2574f7fc`
+`547797479e700d26704e3bb28baa21b3548ded25defb978bce0b51c1f4289591`
 
 ## Chrome 安装
 
@@ -29,7 +29,8 @@ SHA-256：
 2. 复制续聊内容；
 3. 打开新 Chat；
 4. 粘贴发送；
-5. 确认恢复结果后继续。
+5. 检查恢复摘要；正确则回复「确认」，不正确就直接指出需要修改的地方；
+6. 回复「确认」只完成恢复确认，TaskOnward 会停住；你明确说「继续」或给出下一条任务指令后，才继续原任务。
 
 Power 不会自动打开新 Chat，也不会自动发送消息。
 
