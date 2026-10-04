@@ -2,15 +2,15 @@
 
 Power 是 TaskOnward 的可选浏览器助手。
 
-它只负责把当前 Chat 的最近任务现场做成一次性交接内容并复制到剪贴板。你再打开新 Chat，粘贴发送即可。TaskOnward 不再维护第二套长期内容记忆。Power 0.8.1 同时把云端 API 请求切到自有域名，避免 workers.dev 连接不稳定。
+它只负责把当前 Chat 的最近任务现场做成一次性交接内容并复制到剪贴板。你再打开新 Chat，粘贴发送即可。TaskOnward 不再维护第二套长期内容记忆。Power 0.8.2 除继续使用自有 API 域名外，还会在主采集为空时自动补读当前挂载对话；补读成功后继续生成正式 handoff，而不是直接报错。
 
 ## 下载
 
-[下载 TaskOnward Power 0.8.1 ZIP](../downloads/taskonward-power-0.8.1.zip)
+[下载 TaskOnward Power 0.8.2 ZIP](../downloads/taskonward-power-0.8.2.zip)
 
 SHA-256：
 
-`74754cd5c03bd7ffce1ae7003673d08b076af0ec108334abcbab1bbc22f85a33`
+`f8a5ad341ff265d89e988266379c1df5f7ce7f15f743e675de4fd96ca02813d5`
 
 ## Chrome 安装
 
