@@ -2,7 +2,7 @@
 
 Power 是 TaskOnward 的可选浏览器助手。
 
-它只负责把当前 Chat 的最近任务现场做成一次性交接内容并复制到剪贴板。你再打开新 Chat，粘贴发送即可。TaskOnward 不再维护第二套长期内容记忆。Power 0.8.3 继续使用自有 API 域名，并把续聊收敛为单阶段：新 Chat 只需调用一次 `resume_handoff`。用户回复「确认」只是聊天层面的确认，不再触发第二个 TaskOnward 工具调用；临时 handoff 正文在短暂重试窗口后自动清理。
+它只负责把当前 Chat 的最近任务现场做成一次性交接内容并复制到剪贴板。你再打开新 Chat，粘贴发送即可。TaskOnward 不再维护第二套长期内容记忆。Power 0.8.3 继续使用自有 API 域名，并把续聊收敛为单阶段：新 Chat 只需调用一次 `resume_handoff`。用户回复「确认」只是聊天层面的确认，不再触发第二个 TaskOnward 工具调用；临时 handoff 正文保留短暂重试窗口，超过窗口后会在后续 Continuity 请求或现有维护链中机会式清理，不新增 Cloudflare Cron Trigger。
 
 ## 下载
 
