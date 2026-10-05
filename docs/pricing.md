@@ -2,32 +2,14 @@
 
 TaskOnward is currently free during the public beta.
 
-## Free
+There is no announced public paid price at this stage.
 
-Current free access includes:
+The current beta focuses on one question:
 
-- 3 active tasks;
-- core task-state saving;
-- exact continuation into a new chat;
-- confirmation before recovered state becomes canonical;
-- export;
-- confirmed deletion.
+> Can a user move a real long-running task to a new chat and accurately recover the latest working context?
 
-The free tier is intended to show the real core value, not a deliberately weakened recovery experience.
+Future paid features, if introduced, should focus on scale or management rather than intentionally weakening recovery accuracy.
 
-## Future paid tier
-
-A future paid tier is expected to focus on scale and management:
-
-- more active tasks;
-- version history;
-- restore;
-- archive;
-- cross-task search;
-- advanced project views.
-
-No public price has been announced.
-
-Current status page:
+Current status:
 
 https://taskonward.5188688.xyz/pricing

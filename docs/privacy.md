@@ -1,32 +1,27 @@
 # Privacy summary
 
-TaskOnward is designed around structured task continuity rather than full transcript storage.
+TaskOnward Continuity Lite is designed as a bounded task-handoff bridge, not a full transcript archive.
 
-## Product data
+## Current handoff data
 
-The service may store the minimum structured state needed to continue a task, such as:
+When the user explicitly clicks Power, the service may temporarily store:
 
-- task identity;
-- current goal;
-- accepted decisions;
-- completed work;
-- rejected routes;
-- unresolved items;
-- current working state;
-- limited continuation metadata.
+- exact task identity and conversation binding metadata;
+- a bounded recent-message snapshot needed for the one-time handoff;
+- minimal timestamps and status needed to deliver and expire that handoff.
 
-The service is not intended to store a full ChatGPT transcript.
+Ordinary ChatGPT use does not continuously upload conversation content to TaskOnward.
 
 ## Data protection
 
 - User data is tenant-isolated.
-- Stored task-state payloads are encrypted.
-- Temporary continuation snapshots are bounded.
-- Confirmed or expired continuation snapshots are actively scrubbed.
+- Temporary handoff payloads are encrypted.
+- Handoff content is bounded rather than a full conversation archive.
+- Consumed or expired temporary payloads are scrubbed by the current lifecycle.
 
-## Do not store secrets
+## Secrets
 
-Do not place passwords, API keys, seed phrases, authentication cookies, or other secrets into task state.
+Do not include passwords, API keys, seed phrases, authentication cookies, access tokens, or other secrets in a TaskOnward handoff or public bug report.
 
 Full current notice:
 

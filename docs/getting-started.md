@@ -6,28 +6,36 @@ Use:
 
 https://taskonward.5188688.xyz/start
 
-Follow the connection flow shown there.
+Connect TaskOnward and install the current Power version.
 
-## 2. Use a real long-running task
+## 2. Use your normal ChatGPT task
 
-The saved state should capture the current goal, decisions, completed work, rejected routes, unresolved items, and next action.
+No continuous TaskOnward capture is required during ordinary chat use.
+
+When you are ready to move to a fresh chat, click **Power** once in the old chat.
 
 ## 3. Open a new chat
 
-Paste the continuation package into a new chat.
+Power copies the continuation text. Open a new chat, paste it, and send it.
 
-The new chat should first report what it recovered.
+TaskOnward restores only the bounded handoff context frozen by that Power click.
 
-## 4. Confirm or correct
+## 4. Review the recovery
 
-If the recovered state is accurate, confirm it and continue.
+Check whether the new chat correctly reports:
 
-If something important is missing or wrong, correct it before continuing.
+- what you were most recently doing;
+- where the work stopped;
+- what the next pending work is.
 
-## 5. The core test
+If the last assistant reply may have been interrupted, the recovery should say so.
 
-After switching chats:
+## 5. Confirm, then instruct
 
-> Can you continue the original work without re-explaining the project?
+If the recovery is correct, reply `确认`.
 
-That is the primary TaskOnward test.
+That reply only acknowledges the recovery. Give a separate instruction such as `继续` before the original task continues.
+
+## Core test
+
+> Did the new chat recover the latest working context from the Power click without falling back to an older turn or a different task?
