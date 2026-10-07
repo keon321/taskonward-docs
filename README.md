@@ -19,12 +19,12 @@ Replying `确认` only acknowledges the recovery. It does not authorize the assi
 
 ## Current version
 
-Current: **Power 0.8.6**
+Current: **Power 0.8.7**
 
 The public repository keeps:
 
-- Power 0.8.6 — current;
-- Power 0.8.5 — latest rollback.
+- Power 0.8.7 — current;
+- Power 0.8.6 — latest rollback.
 
 Older public installation packages are intentionally removed.
 
