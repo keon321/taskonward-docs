@@ -40,6 +40,25 @@ Ordinary ChatGPT use does not continuously upload conversation content to TaskOn
 
 TaskOnward is currently free during the public beta. No paid price has been announced.
 
+## FAQ
+
+### How is TaskOnward different from "just ask the model to summarize"?
+
+A normal summary compresses "what we talked about" — it can't tell "decided" from "mentioned", "done" from "doing", or "rejected" from "never raised". TaskOnward saves a structured project state — goal, focus, confirmed decisions, completed work, rejected approaches, next step — and asks you to review and confirm it in the new chat before continuing.
+
+### Does the extension keep recording my chats in the background?
+
+No. During normal chatting, Power stays dormant: no collection, no polling, no auto-saving. It only reads the current conversation the moment you click Power, generating a one-time handoff code.
+
+### Is my full chat history uploaded?
+
+No. Only the bounded state needed for the one-time handoff is uploaded — never the full Conversation JSON, never your ChatGPT cookies, session or access tokens. Handoff codes are single-use and expire after use.
+
+### Why do I have to confirm before resuming?
+
+Because a wrong project state costs more than no state. The restored state is shown to you for review first; you continue only after confirming it's right. Your confirmation just means "this state looks correct" — it doesn't authorize the model to keep executing the original task. What happens next always waits for your explicit instruction.
+
+
 ## Security
 
 Do not publish continuation tokens, passwords, API keys, authentication cookies, private task content, or other secrets.
