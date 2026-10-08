@@ -19,14 +19,15 @@ Replying `确认` only acknowledges the recovery. It does not authorize the assi
 
 ## Current version
 
-Current: **Power 0.8.7**
+Current: **Power 0.8.8**
 
 The public repository keeps:
 
-- Power 0.8.7 — current;
-- Power 0.8.6 — latest rollback.
+- Power 0.8.8 — current; user-reported Chrome Power click accepted;
+- Power 0.8.7 — latest rollback;
+- Power 0.8.6 — legacy compatibility download.
 
-Older public installation packages are intentionally removed.
+Older public installation packages may remain available for compatibility. Cross-chat complete resume E2E for 0.8.8 has not been independently verified.
 
 [Power installation guide](docs/power-browser-assistant.md)
 
