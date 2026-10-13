@@ -2,18 +2,22 @@
 
 **Continue work across AI chats without starting over.**
 
-Power is in a limited cross-platform observation with ChatGPT, Claude and Gemini. Existing authorized users can continue using the extension they already installed.
+Power 0.4.7 is available for desktop Chrome. It supports ChatGPT, Claude and Gemini.
 
-[Website](https://taskonward.5188688.xyz/) · [Usage](docs/power-browser-assistant.md) · [Privacy](docs/privacy.md)
+[Download and install](https://taskonward.5188688.xyz/start) · [Usage](docs/power-browser-assistant.md) · [Privacy](docs/privacy.md)
 
-## How it works
+## Install
 
-1. Click Power in the original conversation to copy a short handoff code.
-2. Paste it into the empty input in a new chat. The same code may be used across multiple destination chats.
-3. Power fills an evidence-based task handoff. **Review and manually send it.**
+1. Download the 0.4.7 ZIP from the official website and extract it into a stable folder.
+2. Open `chrome://extensions/`, enable Developer mode, choose **Load unpacked**, then select the folder containing `manifest.json`.
+3. Sign in to TaskOnward from the extension, then refresh your chat pages. No separate MCP or WorkOS administrator configuration is needed.
 
-A handoff is not a complete chat backup, and missing history or files cannot be reconstructed. A newer handoff replaces its predecessor while established branches retain their own progress.
+## Use
 
-**New-user installation is not open yet.** Fixed Chrome extension-ID distribution and a fresh-install WorkOS OAuth check are still required. Existing observation installations are unaffected.
+1. Click Power in the original chat and copy the handoff code.
+2. Paste the code into a new ChatGPT, Claude or Gemini chat.
+3. Review the evidence-based task handoff filled in by Power and **send it manually**.
+
+One code can be used across multiple destination chats; a new handoff replaces the prior code. The handoff is not a full chat archive and cannot reconstruct missing history or attachments. Existing observation users may keep their older installation. Retired 0.8.x public installers remain unavailable.
 
 [Support](https://taskonward.5188688.xyz/support)

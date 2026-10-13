@@ -1,7 +1,7 @@
 # 当前状态
 
-TaskOnward Power 正在小范围跨平台观察，**新用户安装尚未开放**。
+TaskOnward Power 0.4.7 已开放桌面 Chrome 下载安装，支持 ChatGPT、Claude 和 Gemini。
 
-目前未公布正式公开收费方案。现有观察用户可按已授权的范围继续使用。
+目前未公布正式收费方案。具体可用权限以账号与官网实际说明为准。
 
-[产品状态](https://taskonward.5188688.xyz/) · [使用方法](power-browser-assistant.md)
+[下载安装](https://taskonward.5188688.xyz/start) · [使用方法](power-browser-assistant.md)
