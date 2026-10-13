@@ -1,71 +1,51 @@
 # TaskOnward
 
-**New chat. Same thread.**
+**New chat. Keep the right task.**
 
-TaskOnward helps move the recent working context of a long ChatGPT task into a fresh chat, so you do not have to rebuild the handoff manually.
+TaskOnward helps carry the current working context into a fresh AI conversation, without asking you to reconstruct the latest decisions and next steps from scratch.
 
-Start free: https://taskonward.5188688.xyz/
+[Get started](https://taskonward.5188688.xyz/start) · [中文说明](README.zh-CN.md)
 
-## How it works
+## Available releases
 
-1. Install and connect TaskOnward Power.
-2. In the old chat, click Power once.
-3. Open a new chat and paste the copied continuation text.
-4. TaskOnward restores the one-time handoff context.
-5. Review the recovery summary.
-6. If it is correct, reply `确认`; then give a separate instruction to continue the work.
+| Version | Audience | Status |
+|---|---|---|
+| **Power 0.8.8** | ChatGPT | Current public download |
+| **Cross-platform Power 0.4.6** | ChatGPT, Claude, Gemini | Limited observation with existing authorized users |
+| Power 0.8.7 | ChatGPT | Stable rollback |
 
-Replying `确认` only acknowledges the recovery. It does not authorize the assistant to continue the original task automatically.
-
-## Current version
-
-Current: **Power 0.8.8**
-
-The public repository keeps:
-
-- Power 0.8.8 — current; user-reported Chrome Power click accepted;
-- Power 0.8.7 — latest rollback;
-- Power 0.8.6 — legacy compatibility download.
-
-Older public installation packages may remain available for compatibility. Cross-chat complete resume E2E for 0.8.8 has not been independently verified.
+Power 0.4.6 is **not yet a general public installation**. A newly unpacked Chrome extension can receive a different extension ID, while the WorkOS login callback is registered for the existing observation installation. Until fixed-ID distribution and fresh-install OAuth are verified, the website download remains **0.8.8**.
 
 [Power installation guide](docs/power-browser-assistant.md)
 
-## What TaskOnward stores
+## Public Power 0.8.8
 
-The current Continuity Lite path keeps exact task identity plus a bounded, temporary handoff snapshot from the explicit Power click. It is not a full transcript archive and does not maintain a second long-term copy of the conversation.
+1. Install Power and sign in.
+2. Open the current ChatGPT conversation and click Power.
+3. Paste the copied handoff into a new Chat.
+4. Review the restored working context before giving another instruction.
 
-Ordinary ChatGPT use does not continuously upload conversation content to TaskOnward.
+The handoff is bounded and temporary. It is not a full transcript archive or a second permanent project-memory database. Ordinary chatting does not continuously upload messages.
 
-## Public beta
+## Cross-platform Power 0.4.6 (limited observation)
 
-TaskOnward is currently free during the public beta. No paid price has been announced.
+For users who already have an authorized observation installation:
 
-## FAQ
+1. Click the green P in an existing ChatGPT, Claude, or Gemini chat.
+2. Copy the short TaskOnward code.
+3. Paste it into an empty input box in a new chat on any supported platform.
+4. Power retrieves an **evidence-based task handoff**, fills the input, and waits for you to review and send it manually.
 
-### How is TaskOnward different from "just ask the model to summarize"?
+The same code can be used in multiple destination chats. Each destination retains its own subsequent working branch under the same task identity. Generating a new handoff for that task invalidates the earlier code.
 
-A normal summary compresses "what we talked about" — it can't tell "decided" from "mentioned", "done" from "doing", or "rejected" from "never raised". TaskOnward saves a structured project state — goal, focus, confirmed decisions, completed work, rejected approaches, next step — and asks you to review and confirm it in the new chat before continuing.
+The handoff is an extract from bounded, verified message evidence—not a guaranteed complete or lossless historical summary. It must not invent missing decisions, files, or project milestones.
 
-### Does the extension keep recording my chats in the background?
+The current observation code has passed simulated Chromium and isolated database tests; early users report it working, but general fresh-install and OAuth reliability are **not yet verified**.
 
-No. During normal chatting, Power stays dormant: no collection, no polling, no auto-saving. It only reads the current conversation the moment you click Power, generating a one-time handoff code.
+## Security and support
 
-### Is my full chat history uploaded?
+Do not share handoff codes, passwords, API keys, authentication cookies, private task content, or OAuth tokens.
 
-No. Only the bounded state needed for the one-time handoff is uploaded — never the full Conversation JSON, never your ChatGPT cookies, session or access tokens. Handoff codes are single-use and expire after use.
+[Privacy](https://taskonward.5188688.xyz/privacy) · [Support](https://taskonward.5188688.xyz/support)
 
-### Why do I have to confirm before resuming?
-
-Because a wrong project state costs more than no state. The restored state is shown to you for review first; you continue only after confirming it's right. Your confirmation just means "this state looks correct" — it doesn't authorize the model to keep executing the original task. What happens next always waits for your explicit instruction.
-
-
-## Security
-
-Do not publish continuation tokens, passwords, API keys, authentication cookies, private task content, or other secrets.
-
-Privacy: https://taskonward.5188688.xyz/privacy
-
-The core service repository remains private.
-
-[中文说明](README.zh-CN.md)
+The core service repository remains private. No browser-store publication is claimed.
