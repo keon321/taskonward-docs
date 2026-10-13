@@ -1,28 +1,24 @@
-# Privacy summary
+# TaskOnward｜隐私与交接数据说明
 
-TaskOnward Continuity Lite is designed as a bounded task-handoff bridge, not a full transcript archive.
+以下是当前公开稳定版 Power 0.8.8 与小范围观察版 0.4.6 的简要说明。以[官网隐私说明](https://taskonward.5188688.xyz/privacy)为正式页面。
 
-## Current handoff data
+## 数据何时上传
 
-When the user explicitly clicks Power, the service may temporarily store:
+TaskOnward 不会在普通聊天过程中持续录制对话。只有用户明确点击 Power，才读取本次交接需要的有界最近消息，并在用户已登录的 TaskOnward 账号下生成交接。
 
-- exact task identity and conversation binding metadata;
-- a bounded recent-message snapshot needed for the one-time handoff;
-- minimal timestamps and status needed to deliver and expire that handoff.
+服务端会保留必要的任务身份、对话绑定、交接状态与时间信息，交接正文采用应用层加密并按登录用户隔离。它不是完整聊天记录的长期备份，也不能保证自动获取附件或全部历史决定。
 
-Ordinary ChatGPT use does not continuously upload conversation content to TaskOnward.
+## 两个版本的交接码
 
-## Data protection
+- **0.8.8 公开稳定版**：使用原有单目标与有限时效的续聊机制。必须在目标 ChatGPT 连接 TaskOnward MCP 才能取回。
+- **0.4.6 跨平台观察版**：同一码可以在多个目标对话中恢复，直到用户生成替代它的新交接码。各目标的必要分支任务现场可以继续独立保留；目标浏览器扩展直接取回，无须在目标 AI 连接 MCP。
 
-- User data is tenant-isolated.
-- Temporary handoff payloads are encrypted.
-- Handoff content is bounded rather than a full conversation archive.
-- Consumed or expired temporary payloads are scrubbed by the current lifecycle.
+“生成新码使旧码失效”不等于删除全部相关任务记录。已经建立的任务和分支绑定不应被误认为随着旧码一起删除。
 
-## Secrets
+## 用户控制与风险
 
-Do not include passwords, API keys, seed phrases, authentication cookies, access tokens, or other secrets in a TaskOnward handoff or public bug report.
+用户自行决定何时点击 Power、在什么目标聊天中粘贴、以及是否发送恢复材料。TaskOnward 不代用户发送信息。
 
-Full current notice:
+不要向 TaskOnward 交接或公开反馈中提供密码、API 密钥、助记词、Cookie、OAuth 令牌、私人附件或其他秘密。重要资料请保留独立备份。
 
-https://taskonward.5188688.xyz/privacy
+跨平台 0.4.6 尚未向新用户提供通用安装；其固定扩展 ID、登录回调和全新安装验收仍在进行。

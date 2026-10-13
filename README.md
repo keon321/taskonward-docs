@@ -20,12 +20,12 @@ Power 0.4.6 is **not yet a general public installation**. A newly unpacked Chrom
 
 ## Public Power 0.8.8
 
-1. Install Power and sign in.
-2. Open the current ChatGPT conversation and click Power.
-3. Paste the copied handoff into a new Chat.
-4. Review the restored working context before giving another instruction.
+1. Install Power 0.8.8 and sign in to TaskOnward.
+2. **Connect TaskOnward MCP in ChatGPT for restoration** using the service URL `https://taskonward.5188688.xyz/mcp` (the custom connector option depends on your ChatGPT account/workspace). See the [installation guide](docs/power-browser-assistant.md).
+3. Click Power in the original ChatGPT chat to prepare the handoff.
+4. Paste and manually send in a new ChatGPT conversation; verify TaskOnward actually retrieved the handoff before continuing.
 
-The handoff is bounded and temporary. It is not a full transcript archive or a second permanent project-memory database. Ordinary chatting does not continuously upload messages.
+MCP alone cannot create a handoff by prompting the old chat to save; Power prepares it and MCP restores it in the destination ChatGPT. The handoff is bounded, not a full transcript archive or a second permanent project-memory database. Ordinary chatting does not continuously upload messages.
 
 ## Cross-platform Power 0.4.6 (limited observation)
 

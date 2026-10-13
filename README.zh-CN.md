@@ -18,12 +18,12 @@ TaskOnward 帮你把当前任务现场带入新的 AI 对话，避免每次从�
 
 ## 公开稳定版 Power 0.8.8
 
-1. 安装 Power，使用 TaskOnward 账号登录。
-2. 在原 ChatGPT 对话中点击 Power。
-3. 打开新 Chat，粘贴续聊内容。
-4. 核对恢复结果，再明确告诉 AI 下一步做什么。
+1. 下载、安装 Power 0.8.8，并使用 TaskOnward 账号登录。
+2. **在 ChatGPT 中添加并连接 TaskOnward MCP**，服务器地址 `https://taskonward.5188688.xyz/mcp`，用于新 Chat 恢复；具体见[安装说明](docs/power-browser-assistant.md)。
+3. 在旧 ChatGPT 对话点击 Power，等待复制交接内容。
+4. 新开 ChatGPT 对话，粘贴并手动发送；确认 TaskOnward 真正取回交接后，再明确下一步。
 
-保存的是有界、临时的当前任务现场，不是完整聊天归档，也不是第二套永久保存的项目记忆。
+**只靠连接 MCP 并在旧对话发送“保存任务”不能生成续聊码。** 0.8.8 必须由 Power 产生交接，并由目标 ChatGPT 的 TaskOnward MCP 读取。保存的是有界的最近任务现场，不是完整聊天归档或永久项目记忆。
 
 ## 跨平台观察版 0.4.6
 
