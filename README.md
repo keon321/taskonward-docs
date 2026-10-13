@@ -1,51 +1,19 @@
-# TaskOnward
+# TaskOnward Power
 
-**New chat. Keep the right task.**
+**Continue work across AI chats without starting over.**
 
-TaskOnward helps carry the current working context into a fresh AI conversation, without asking you to reconstruct the latest decisions and next steps from scratch.
+Power is in a limited cross-platform observation with ChatGPT, Claude and Gemini. Existing authorized users can continue using the extension they already installed.
 
-[Get started](https://taskonward.5188688.xyz/start) · [中文说明](README.zh-CN.md)
+[Website](https://taskonward.5188688.xyz/) · [Usage](docs/power-browser-assistant.md) · [Privacy](docs/privacy.md)
 
-## Available releases
+## How it works
 
-| Version | Audience | Status |
-|---|---|---|
-| **Power 0.8.8** | ChatGPT | Current public download |
-| **Cross-platform Power 0.4.6** | ChatGPT, Claude, Gemini | Limited observation with existing authorized users |
-| Power 0.8.7 | ChatGPT | Stable rollback |
+1. Click Power in the original conversation to copy a short handoff code.
+2. Paste it into the empty input in a new chat. The same code may be used across multiple destination chats.
+3. Power fills an evidence-based task handoff. **Review and manually send it.**
 
-Power 0.4.6 is **not yet a general public installation**. A newly unpacked Chrome extension can receive a different extension ID, while the WorkOS login callback is registered for the existing observation installation. Until fixed-ID distribution and fresh-install OAuth are verified, the website download remains **0.8.8**.
+A handoff is not a complete chat backup, and missing history or files cannot be reconstructed. A newer handoff replaces its predecessor while established branches retain their own progress.
 
-[Power installation guide](docs/power-browser-assistant.md)
+**New-user installation is not open yet.** Fixed Chrome extension-ID distribution and a fresh-install WorkOS OAuth check are still required. Existing observation installations are unaffected.
 
-## Public Power 0.8.8
-
-1. Install Power 0.8.8 and sign in to TaskOnward.
-2. **Connect TaskOnward MCP in ChatGPT for restoration** using the service URL `https://taskonward.5188688.xyz/mcp` (the custom connector option depends on your ChatGPT account/workspace). See the [installation guide](docs/power-browser-assistant.md).
-3. Click Power in the original ChatGPT chat to prepare the handoff.
-4. Paste and manually send in a new ChatGPT conversation; verify TaskOnward actually retrieved the handoff before continuing.
-
-MCP alone cannot create a handoff by prompting the old chat to save; Power prepares it and MCP restores it in the destination ChatGPT. The handoff is bounded, not a full transcript archive or a second permanent project-memory database. Ordinary chatting does not continuously upload messages.
-
-## Cross-platform Power 0.4.6 (limited observation)
-
-For users who already have an authorized observation installation:
-
-1. Click the green P in an existing ChatGPT, Claude, or Gemini chat.
-2. Copy the short TaskOnward code.
-3. Paste it into an empty input box in a new chat on any supported platform.
-4. Power retrieves an **evidence-based task handoff**, fills the input, and waits for you to review and send it manually.
-
-The same code can be used in multiple destination chats. Each destination retains its own subsequent working branch under the same task identity. Generating a new handoff for that task invalidates the earlier code.
-
-The handoff is an extract from bounded, verified message evidence—not a guaranteed complete or lossless historical summary. It must not invent missing decisions, files, or project milestones.
-
-The current observation code has passed simulated Chromium and isolated database tests; early users report it working, but general fresh-install and OAuth reliability are **not yet verified**.
-
-## Security and support
-
-Do not share handoff codes, passwords, API keys, authentication cookies, private task content, or OAuth tokens.
-
-[Privacy](https://taskonward.5188688.xyz/privacy) · [Support](https://taskonward.5188688.xyz/support)
-
-The core service repository remains private. No browser-store publication is claimed.
+[Support](https://taskonward.5188688.xyz/support)

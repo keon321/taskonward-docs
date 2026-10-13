@@ -1,15 +1,7 @@
-# Pricing status
+# 当前状态
 
-TaskOnward is currently free during the public beta.
+TaskOnward Power 正在小范围跨平台观察，**新用户安装尚未开放**。
 
-There is no announced public paid price at this stage.
+目前未公布正式公开收费方案。现有观察用户可按已授权的范围继续使用。
 
-The current beta focuses on one question:
-
-> Can a user move a real long-running task to a new chat and accurately recover the latest working context?
-
-Future paid features, if introduced, should focus on scale or management rather than intentionally weakening recovery accuracy.
-
-Current status:
-
-https://taskonward.5188688.xyz/pricing
+[产品状态](https://taskonward.5188688.xyz/) · [使用方法](power-browser-assistant.md)
