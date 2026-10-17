@@ -2,22 +2,17 @@
 
 **Continue work across AI chats without starting over.**
 
-Power 0.4.7 is available for desktop Chrome. It supports ChatGPT, Claude and Gemini.
+Power **0.4.8** supports ChatGPT, Claude and Gemini on desktop Chrome, with a **Chinese / English** interface setting in the extension popup. The preference is saved and only affects UI text, never your chat content or handoff protocol.
 
-[Download and install](https://taskonward.5188688.xyz/start) · [Usage](docs/power-browser-assistant.md) · [Privacy](docs/privacy.md)
+[Official download](https://taskonward.5188688.xyz/start) · [Usage](docs/power-browser-assistant.md) · [Privacy](docs/privacy.md)
 
-## Install
+## Install and use
 
-1. Download the 0.4.7 ZIP from the official website and extract it into a stable folder.
-2. Open `chrome://extensions/`, enable Developer mode, choose **Load unpacked**, then select the folder containing `manifest.json`.
-3. Sign in to TaskOnward from the extension, then refresh your chat pages. No separate MCP or WorkOS administrator configuration is needed.
+1. Download and extract the latest ZIP into a stable folder.
+2. Open `chrome://extensions/`, enable Developer mode, and choose **Load unpacked**.
+3. Select the folder containing `manifest.json`. Sign in from the Power toolbar popup and choose 中文 or English.
+4. In the original chat, click P and copy the handoff code. Paste into an empty destination chat, review the handoff, then send it yourself.
 
-## Use
-
-1. Click Power in the original chat and copy the handoff code.
-2. Paste the code into a new ChatGPT, Claude or Gemini chat.
-3. Review the evidence-based task handoff filled in by Power and **send it manually**.
-
-One code can be used across multiple destination chats; a new handoff replaces the prior code. The handoff is not a full chat archive and cannot reconstruct missing history or attachments. Existing observation users may keep their older installation. Retired 0.8.x public installers remain unavailable.
+A handoff is not a complete chat backup. Older 0.4.7 installations remain compatible and the previous ZIP is retained privately for rollback. Retired 0.8.x installers remain delisted.
 
 [Support](https://taskonward.5188688.xyz/support)
