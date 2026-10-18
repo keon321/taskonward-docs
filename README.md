@@ -13,6 +13,6 @@ Power **0.4.8** supports ChatGPT, Claude and Gemini on desktop Chrome, with a **
 3. Select the folder containing `manifest.json`. Sign in from the Power toolbar popup and choose 中文 or English.
 4. In the original chat, click P and copy the handoff code. Paste into an empty destination chat, review the handoff, then send it yourself.
 
-A handoff is not a complete chat backup. Older 0.4.7 installations remain compatible and the previous ZIP is retained privately for rollback. Retired 0.8.x installers remain delisted.
+A handoff is not a complete chat backup. **Manually loaded Chrome extensions do not auto-update**: to upgrade 0.4.7, keep a backup, replace the contents of the original unpacked directory, and reload the extension in Chrome. The previous ZIP remains available as a rollback. Retired 0.8.x installers remain delisted.
 
 [Support](https://taskonward.5188688.xyz/support)
